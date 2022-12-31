@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robotto",sans-serif;
+}
+nav{
+    background: rgb(83, 78, 78);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px  10px 10px 10px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.logo
+{
+    padding-top: 10px;
+} 
+.logo p{
+ font-size: 25px;
+ border: 1px dashed rgb(255, 0, 140) ;
+ padding: 3px;
+ font-weight: bold;
+ font-family: Bookman, URW Bookman L, serif;
+ color: #fff;
+ font-weight: bold;
+}
+.unique
+{
+    color: rgb(255, 0, 140);
+    font-weight: bold;
+}
+.links{
+   margin-left: 20%; 
+}
+.links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links ul li{
+    margin-left:35px;
+    cursor: pointer;
+}
+.links ul li a{
+    color: rgb(255, 0, 140);
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.links ul li a:hover{
+transform: translateY(-3px);
+color: #fff;
+}
+.menu-btn,#checking{
+    display: none;
+    
+}
+@media only screen and (max-width:1074px){
+    .logo p{
+        padding: 2px;
+        font-size: 20px;
+    }
+    .links ul li a{
+        color: rgb(255, 0, 140);
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width:880px){
+    .logo p{
+        padding: 2px;
+        font-size: 25px;
+    }
+    .links ul li a{
+        color: rgb(255, 0, 140);
+        font-size: 19px;
+    }
+    .links ul{
+        width:100%;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        left:-100% ;
+        background: rgb(83, 78, 78);
+        display: block;
+        text-align: center;
+        transition: all 400ms;
+    }
+    .links ul li{
+        margin-top:40px;
+    }
+    .links ul li:hover{
+        width:100%;
+        color: #fff;
+       background-color: rgb(255, 0, 140);
+        border-radius: 5px;
+        padding: 5px; 
+        text-align: center;
+    }
+    label .menu-btn{
+        padding-top: -10px;
+        width:22px;
+        height: 18px;
+        display: block;
+        cursor: pointer;
+        color: #fff;
+    }
+    #checking:checked ~ ul{
+        left:0%;
+    }
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+.main h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+}
+.main p{
+    font-size: 20px;
+    color: rgb(255,255,255);
+    font-style: italic;
+}
+.main .btn,.about .btn,.courses .btn,.btn{
+    color: #fff;
+    font-weight:bold ;
+    border: 1px solid rgb(255, 0, 140);
+    border-radius: 10px;
+    background: rgb(255, 0, 140);
+    width: 150px;
+    height: 35px;
+    box-shadow: 5px 5px 10px rgb(255, 0, 140);
+   transition: .3s;
+}
+.main .btn:hover,.about .btn:hover,.courses .btn:hover,.btn:hover{
+  transform: translateX(3px);
+  color: rgb(255, 0, 140);
+  background-color: #fff;
+}
+.about{
+    text-align: center;
+    
+}
+#us{
+    color: rgb(255, 0, 140);
+}
+.about h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+.courses{
+    padding: 35px;
+    text-align: center;
+    
+    background-color: rgb(41, 39, 39);
+}
+.courses h3,.contact h3{
+    font-size: 35px;
+    color: #fff;
+}
+.courses h2{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: #fff;
+}
+.courses h5{
+    color: rgb(255, 0, 140);
+    font-weight: bold;
+}
+.courses img{
+    width: 184;
+    height: 250px;
+}
+.courses .col1{
+    
+    padding:  40px;
+    transition: .3s;
+}
+.col1:hover{
+    box-shadow: 0 3px 10px rgb(255, 0, 140);
+    transform: translateY(-5px);
+}
+.card{
+    color: #fff;
+    box-shadow:
+        0 2.8px 2.2px rgba(187, 176, 176, 0.034),
+        0 6.7px 5.3px rgba(230, 227, 227, 0.048),
+        0 12.5px 10px rgba(241, 239, 239, 0.06),
+        0 22.3px 17.9px rgba(224, 217, 217, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(253, 251, 251, 0.12)
+      ;
+    background-color: rgb(41, 39, 39);
+}
+hr{
+    color: #fff;
+}
+.experts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.experts h3{
+    padding-top: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.experts img{
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+.experts h5{
+    color: rgb(255, 0, 140);
+}
+.experts p{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact{
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(83, 78, 78);
+    margin-top: 50px;
+
+}
+.contact h3 a{
+    color: #fff;
+    font-size: 30px;
+}
+.cont{
+    margin: 20px;
+    border: 1px #fff dashed;
+    padding: 10px;
+    box-shadow:
+        0 2.8px 2.2px rgba(187, 176, 176, 0.034),
+        0 6.7px 5.3px rgba(230, 227, 227, 0.048),
+        0 12.5px 10px rgba(241, 239, 239, 0.06),
+        0 22.3px 17.9px rgba(224, 217, 217, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(253, 251, 251, 0.12);
+    transition: ease-in .3s;
+}
+.cont:hover{
+    transform: rotateX('30deg');
+    box-shadow: 0 3px 10px rgb(255, 0, 140);
+}
+
+.contacts h4{
+color: #fff;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contacts h5{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fa{
+    color: rgb(255, 0, 140);
+}
+.head{
+    background-color: rgb(255, 0, 140);
+}
+.head1{
+    color: #fff;
+}
+.icons i{
+    color: #fff;
+}
+ h6{
+    color: rgb(255, 0, 140);
+}
+/* ....................about us......................... */
+.aboutus img{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180 right,#fff,rgb(255,0,140));
+}
+
+.main-abt{
+    margin-top: 100px;
+    text-align: center;
+}
+.main-abt h3{
+    font-size: 40px;
+}
+.choose{
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(141, 141, 141);
+}
+.choose h2{
+    color: #fff;
+}
+.choose h5{
+    color: rgb(255, 0, 140);
+}
+.choose p{
+    color: #fff;
+}
+.choose-cont{
+    padding: 25px;
+}
+.choose-cont .fa{
+    color: #fff;
+    transition: .5s ease-in;
+}
+.choose-cont:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(250, 250, 250, 0.3) 0px 30px 60px -30px;}
+.choose .one,.choose .three{
+    transform: translateY(40px);
+    
+}
+/* ---------------------Coueses Page---------------- */
+.cour{
+margin-top: 90px;
+}
+.course-row{
+    margin-top: 40px;
+}
+.img-sli{
+    width: 100%;
+    height: 600px;
+}
+.course{
+    text-align: center;
+}
+.course p{
+    color: rgb(255, 0, 140);
+    font-size: 15px;
+    font-weight: bold;
+}
+.course{
+    padding: 20px;
+}
+.line
+{
+    background-color: #000;
+    width: 3px;
+    height: 100px;
+}
+#flip{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(255, 0, 140);
+    text-align: center;
+    color: #fff;
+    
+}
+.panel{
+    text-align: center;
+    border-radius: 10px;
+    padding:30px;
+    display: none;
+    background-color: darkgrey;
+}
+.panel h4{
+    color: #fff;
+    
+}
+.panel p{
+    font-size: 18px;
+}
+.course-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.course-img{
+    border-radius: 25px;
+    width: 95%;
+    height: 400px;
+    transition: .3s;
+}
+.course-img:hover{
+    box-shadow: 0 5px 30px rgb(255, 0, 140);
+    transform: translateX(5px);
+}
+.more,.web-more,.back-more,.graph-more,.data-more,.devops-more{
+    color: rgb(52, 42, 199);
+}
+#cut{
+text-decoration: line-through;
+color: green;
+}
+#red{
+    color: red;
+}
+.heading p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+/* --------------contact Us------------------- */
+.contact-us{
+background-color: rgb(59, 53, 53);
+
+}
+.cont-img{
+   width: 100%;
+   height: 600px;
+   background:linear-gradient(rgba(194, 24, 171, 0.3),rgba(156, 11, 144, 0.3));
+ }
+.form h2{
+    margin-top: 25px;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(255, 0, 140);
+}
+#contactForm{
+   
+    padding: 50px;
+}
+
+.form-label{
+    color: #fff;
+}
+/* -------------------------Experts-------------------- */
+.expertTutors #exp{
+    margin-top: 75px;
+}
+.expertTutors #exp h3{
+    font-size: 30px;
+}
+.expertTutors hr{
+    text-align:center;
+    color:rgb(255, 0, 140);
+    height: 2px;  }
+    
